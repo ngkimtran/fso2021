@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 const Button = ({ text, handleClick }) => {
   return (
@@ -63,7 +63,7 @@ const App = () => {
   return (
     <div>
       <Anecdote anecdotes={anecdotes} points={points} selected={selected} setPoints={setPoints} setSelected={setSelected}/>
-      <BestAnecdote anecdotes = {anecdotes} points={points} best={best} />
+      <BestAnecdote anecdotes={anecdotes} points={points} best={best} />
     </div>
   )
 }
