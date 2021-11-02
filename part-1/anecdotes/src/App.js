@@ -35,10 +35,7 @@ const Anecdote = ({ anecdotes, points, selected, setPoints, setSelected }) => {
   )
 }
 
-const BestAnecdote = ({ anecdotes, points, best, setBest }) => {
-  useEffect(() => { 
-    setBest(anecdotes[points.indexOf(Math.max(...points))]);
-  }, [anecdotes, points,setBest])
+const BestAnecdote = ({ anecdotes, points, best }) => {
 
   return (
     <>
@@ -61,13 +58,12 @@ const App = () => {
    
   const [selected, setSelected] = useState(0)
   const [points, setPoints] = useState(Array(7).fill(0));
-  const [best, setBest] = useState(anecdotes[0]);
-
+  const best = anecdotes[points.indexOf(Math.max(...points))]
 
   return (
     <div>
       <Anecdote anecdotes={anecdotes} points={points} selected={selected} setPoints={setPoints} setSelected={setSelected}/>
-      <BestAnecdote anecdotes = {anecdotes} points={points} best={best} setBest={setBest}/>
+      <BestAnecdote anecdotes = {anecdotes} points={points} best={best} />
     </div>
   )
 }
