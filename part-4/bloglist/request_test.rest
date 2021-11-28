@@ -15,7 +15,7 @@ Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc
 
 ###
 GET http://localhost:3003/api/blogs/
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QiLCJpZCI6IjYxOTNhZDhhNjFmZGU0ODJhZDRkMWIyOSIsImlhdCI6MTYzNzI0MjMzMCwiZXhwIjoxNjM3MjQ1OTMwfQ.ZLnuDdMeumLLJ-buiX-W_w6-hWcKzpJ_WMOvJ7Z7x8M
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QiLCJpZCI6IjYxOTNhZDhhNjFmZGU0ODJhZDRkMWIyOSIsImlhdCI6MTYzNzc2NDI0MSwiZXhwIjoxNjM3NzY3ODQxfQ.nX3cZUsUgecaVePCjOzi_AOtrVSiL5k0aCjDbl4cXOU
 
 ###
 GET http://localhost:3003/api/blogs/6193a5c5e844f64a04b1477b
