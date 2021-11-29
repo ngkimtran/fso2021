@@ -97,14 +97,15 @@ describe('Blog app', function () {
         });
       });
 
-      it('blogs are ordered according to likes', function () {
-        cy.get('.blog').then(($elements) => {
-          let blogs = $elements.map((i, $el) => $el);
-          cy.wrap(blogs).should(
-            'equal',
-            blogs.sort((a, b) => b.likes - a.likes)
-          );
+      it.only('blogs are ordered according to likes', function () {
+        let blogs = [];
+        cy.get('.blog').each(($elements) => {
+          blogs.push($elements.text());
         });
+        cy.wrap(blogs).should(
+          'equal',
+          blogs.sort((a, b) => b.likes - a.likes)
+        );
       });
     });
   });
