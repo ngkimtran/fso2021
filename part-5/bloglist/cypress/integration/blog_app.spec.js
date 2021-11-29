@@ -97,7 +97,7 @@ describe('Blog app', function () {
         });
       });
 
-      it.only('blogs are ordered according to likes', function () {
+      it('blogs are ordered according to likes', function () {
         let blogs = [];
         cy.get('.blog').each(($elements) => {
           blogs.push($elements.text());
