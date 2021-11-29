@@ -98,7 +98,7 @@ describe('Blog app', function () {
       });
 
       it('blogs are ordered according to likes', function () {
-        cy.get('.blogs').then(($elements) => {
+        cy.get('.blog').then(($elements) => {
           let blogs = $elements.map(($el) => $el);
           cy.wrap(blogs).should(
             'equal',
