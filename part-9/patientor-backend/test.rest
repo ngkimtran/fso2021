@@ -1,0 +1,42 @@
+POST http://localhost:3001/api/patients
+Content-Type: application/json
+
+{
+  "name": "Kim Tran",
+  "occupation": "student",
+  "gender": "female",
+  "ssn": "222222-AAAA",
+  "dateOfBirth": "1999-01-24"
+}
+
+###
+POST http://localhost:3001/api/patients/0d6d67e0-7093-11ec-8a45-6fe96104baa3/entries
+Content-Type: application/json
+
+{
+  "id": "54a8746e-34c4-4cf4-bf72-bfecd039be9a",
+  "date": "2019-05-01",
+  "specialist": "Dr Byte House",
+  "type": "HealthCheck",
+  "description": "Digital overdose, very bytestatic. Otherwise healthy.",
+ "healthCheckRating": 0
+}
+
+###
+
+POST http://localhost:3001/api/patients/0d6d67e0-7093-11ec-8a45-6fe96104baa3/entries
+Content-Type: application/json
+
+{
+        "id": "d811e46d-70b3-4d90-b090-4535c7cf8fb1",
+        "date": "2015-01-02",
+        "type": "Hospital",
+        "specialist": "MD House",
+        "diagnosisCodes": ["S62.5"],
+        "description":
+          "Healing time appr. 2 weeks. patient doesn't remember how he got the injury.",
+        "discharge": {
+          "date": "2015-01-16",
+          "criteria": "Thumb has healed."
+        }
+}
